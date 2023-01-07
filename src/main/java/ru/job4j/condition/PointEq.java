@@ -8,7 +8,6 @@ public class PointEq {
         return (x1 == x2) && (y1 == y2);
     }
 
-
     public static void main(String[] args) {
         System.out.println(eq(1, 1, 2, 2));
         System.out.println(eq(10, 10, 10, 10));
