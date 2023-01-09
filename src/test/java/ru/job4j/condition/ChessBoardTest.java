@@ -6,7 +6,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static ru.job4j.condition.ChessBoard.way;
 
 class ChessBoardTest {
-
     @Test
     public void wayIs5() {
         int x1 = 6;
