@@ -4,7 +4,6 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static ru.job4j.condition.SwitchWeek.nameOfDay;
-
 import ru.job4j.condition.SwitchWeek.*;
 
 class SwitchWeekTest {
@@ -14,6 +13,7 @@ class SwitchWeekTest {
         String dayOfWeek = nameOfDay(1);
         assertEquals("Понедельник", dayOfWeek);
     }
+
     @Test
     void dayOf8() {
         String dayOfWeek = nameOfDay(8);
