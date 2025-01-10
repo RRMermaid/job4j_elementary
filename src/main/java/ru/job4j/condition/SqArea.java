@@ -12,9 +12,9 @@ public class SqArea {
         if (p <= 0 || k <= 0) {
             throw new IllegalArgumentException("Периметр и коэффициент должны быть положительными числами.");
         }
-        double h = p / (2 * (k + 1)); // Высота h
-        double l = h * k; // Длина l
-        return l * h; // Площадь S = l * h
+        double h = p / (2 * (k + 1));
+        double l = h * k;
+        return l * h;
     }
 
     public static void main(String[] args) {
