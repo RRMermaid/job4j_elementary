@@ -11,46 +11,37 @@ public class PointTest {
 
     @Test
     public void when00to20then2() {
-        double expected = 2;
-        int x1 = 0;
-        int y1 = 0;
-        int x2 = 2;
-        int y2 = 0;
-        double out = Point.distance(x1, y1, x2, y2);
+        double expected = 2.0;
+        Point a = new Point(0, 0);
+        Point b = new Point(2, 0);
+        double out = a.distance(b);
         Assert.assertEquals(expected, out, 0.01);
     }
 
     @Test
     public void when14to25then1dot41() {
         double expected = 1.41;
-        int x1 = 1;
-        int y1 = 4;
-        int x2 = 2;
-        int y2 = 5;
-        double out = Point.distance(x1, y1, x2, y2);
+        Point a = new Point(1, 4);
+        Point b = new Point(2, 5);
+        double out = a.distance(b);
         Assert.assertEquals(expected, out, 0.01);
     }
 
     @Test
     public void when34to26then2dot23() {
         double expected = 2.23;
-        int x1 = 3;
-        int y1 = 4;
-        int x2 = 2;
-        int y2 = 6;
-        double out = Point.distance(x1, y1, x2, y2);
+        Point a = new Point(3, 4);
+        Point b = new Point(2, 6);
+        double out = a.distance(b);
         Assert.assertEquals(expected, out, 0.01);
     }
 
     @Test
     public void when13to76then6dot70() {
-        double expected = 6.7;
-        int x1 = 1;
-        int y1 = 3;
-        int x2 = 7;
-        int y2 = 6;
-        double out = Point.distance(x1, y1, x2, y2);
+        double expected = 6.70;
+        Point a = new Point(1, 3);
+        Point b = new Point(7, 6);
+        double out = a.distance(b);
         Assert.assertEquals(expected, out, 0.01);
     }
-
 }
