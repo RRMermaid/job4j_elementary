@@ -25,7 +25,7 @@ public class PointTest {
 
     @Test
     public void when345to267then2dot45() {
-        double expected = 2.45;
+        double expected = 3;
         Point a = new Point(3, 4, 5);
         Point b = new Point(2, 6, 7);
         double out = a.distance(b);
@@ -34,7 +34,7 @@ public class PointTest {
 
     @Test
     public void when135to765then6dot78() {
-        double expected = 6.78;
+        double expected = 6.7;
         Point a = new Point(1, 3, 5);
         Point b = new Point(7, 6, 5);
         double out = a.distance(b);
