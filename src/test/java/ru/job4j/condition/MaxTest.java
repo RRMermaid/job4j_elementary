@@ -1,28 +1,21 @@
-package ru.job4j.condition;
+import org.junit.jupiter.api.Test;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class MaxTest {
 
     @Test
-    public void whenMaxOfTwoNumbers() {
-        int result = Max.max(9, 6);
-        int expected = 9;
-        assertEquals(expected, result);
+    public void testMaxTwoNumbers() {
+        assertEquals(9, Max.findMax(9, 6)); // Используем findMax вместо max
     }
 
     @Test
-    public void whenMaxOfThreeNumbers() {
-        int result = Max.max(3, 7, 3);
-        int expected = 7;
-        assertEquals(expected, result);
+    public void testMaxThreeNumbers() {
+        assertEquals(7, Max.findMax(3, 7, 3)); // Используем findMax вместо max
     }
 
     @Test
-    public void whenMaxOfFourNumbers() {
-        int result = Max.max(5, 5, 7, 9);
-        int expected = 9;
-        assertEquals(expected, result);
+    public void testMaxFourNumbers() {
+        assertEquals(9, Max.findMax(5, 5, 7, 9)); // Используем findMax вместо max
     }
 }
